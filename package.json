@@ -1,0 +1,26 @@
+{
+  "name": "decentralized-file-storage",
+  "version": "1.0.0",
+  "description": "Decentralized file storage: IPFS for files, Ethereum for metadata, access control and payments",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "coverage": "npx hardhat coverage",
+    "gas": "REPORT_GAS=true npx hardhat test",
+    "deploy": "npx hardhat run scripts/deploy.js --network localhost",
+    "deploy-local": "npx hardhat run scripts/deploy.js --network hardhat",
+    "node": "npx hardhat node",
+    "clean": "npx hardhat clean"
+  },
+  "keywords": ["blockchain", "ipfs", "decentralized-storage", "ethereum", "solidity"],
+  "author": "Allayah Anderson",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0"
+  }
+}
